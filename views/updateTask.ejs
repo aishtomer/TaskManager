@@ -37,6 +37,20 @@
         <option value="Completed" <% if (task.status === 'Completed') { %>selected<% } %>>Completed</option>
       </select>
 
+      <label for="priority">Priority:</label>
+      <select id="priority" name="priority">
+        <option value="High" <% if (task.priority === 'High') { %>selected<% } %>>High</option>
+        <option value="Medium" <% if (task.priority === 'Medium') { %>selected<% } %>>Medium</option>
+        <option value="Low" <% if (task.priority === 'Low') { %>selected<% } %>>Low</option>
+      </select>
+
+      <label for="category">Category:</label>
+      <select id="category" name="category">
+        <option value="Work" <% if (task.category === 'Work') { %>selected<% } %>>Work</option>
+        <option value="Personal" <% if (task.category === 'Personal') { %>selected<% } %>>Personal</option>
+        <option value="Home" <% if (task.category === 'Home') { %>selected<% } %>>Home</option>
+      </select>
+
       <button type="submit">Update Task</button>
     </form>
   </div>

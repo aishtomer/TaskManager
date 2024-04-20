@@ -39,7 +39,7 @@ exports.postCreateTask = async (req, res) => {
       return;
     }
 
-    const { title, description, deadline } = req.body;
+    const { title, description, deadline, priority, status, category} = req.body;
     var user_id = user.user_id;
 
     // Create a new task for the logged-in user
@@ -47,7 +47,10 @@ exports.postCreateTask = async (req, res) => {
       user_id,
       title,
       description,
-      deadline
+      deadline,
+      priority,
+      status,
+      category
     });
 
     // Redirect back to the tasks page
@@ -91,7 +94,7 @@ exports.postUpdateTask = async (req, res) => {
     try {
       const user = req.session.user;
       const taskId = req.params.id;
-      const { title, description, deadline, status } = req.body;
+      const { title, description, deadline, priority, status, category} = req.body;
   
       if (!user) {
         // Redirect to login if the user is not logged in
@@ -113,6 +116,8 @@ exports.postUpdateTask = async (req, res) => {
       taskToUpdate.description = description;
       taskToUpdate.deadline = deadline;
       taskToUpdate.status = status;
+      taskToUpdate.priority = priority;
+      taskToUpdate.category = category;
   
       await taskToUpdate.save();
   

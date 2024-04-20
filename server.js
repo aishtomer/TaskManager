@@ -3,13 +3,24 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const path = require('path');
 const Sequelize = require("sequelize");
+// const sequelize = new Sequelize(
+//     'taskmanager7860',
+//     'aishtomer',
+//     'Ast@8874635984',
+//     {
+//         host: 'db4free.net',
+//         dialect: 'mysql'
+//     }
+// );
+
+// Define Sequelize instance with database connection details
 const sequelize = new Sequelize(
-    'taskmanager7860',
-    'aishtomer',
-    'Ast@8874635984',
+    'sql8700522',      // Database name
+    'sql8700522',            // Database username
+    'ZL8DvjS3VH',       // Database password
     {
-        host: 'db4free.net',
-        dialect: 'mysql'
+        host: 'sql8.freemysqlhosting.net',// Database host
+        dialect: 'mysql'    // Database dialect
     }
 );
 

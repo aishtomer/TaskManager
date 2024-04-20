@@ -3,11 +3,11 @@ const User = require("./users");
 
 // Define Sequelize instance with database connection details
 const sequelize = new Sequelize(
-    'taskmanager7860',      // Database name
-    'aishtomer',            // Database username
-    'Ast@8874635984',       // Database password
+    'sql8700522',      // Database name
+    'sql8700522',            // Database username
+    'ZL8DvjS3VH',       // Database password
     {
-        host: 'db4free.net',// Database host
+        host: 'sql8.freemysqlhosting.net',// Database host
         dialect: 'mysql'    // Database dialect
     }
 );
@@ -36,11 +36,22 @@ const Tasks = sequelize.define("tasks",{
     deadline: {
         type: DataTypes.DATEONLY
     },
+    priority: {
+        type: DataTypes.STRING,
+        defaultValue: 'High'
+    },
     status: {
         type: DataTypes.STRING,
         defaultValue: 'Not Started'
     },
-    
+    category: {
+        type: DataTypes.STRING,  
+        defaultValue: 'Personal'          
+    },
+    created_at: {
+        type: DataTypes.DATE,
+        defaultValue: DataTypes.NOW
+    }
 })
 
 // Define association between User and Tasks models
@@ -50,7 +61,7 @@ User.hasMany(Tasks,{
 Tasks.belongsTo(User);
 
 // Sync the model with the database to create the 'Tasks' table
-sequelize.sync({force:true}).then(() => {
+sequelize.sync().then(() => {
     console.log('Task table created successfully!');
 }).catch((error) => {
     console.error('Unable to create table : ', error);
