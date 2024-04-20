@@ -33,6 +33,10 @@ app.use(session({
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+// Routes
+const userRoutes = require('./routes/user_routes');
+app.use('/users', userRoutes);
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
