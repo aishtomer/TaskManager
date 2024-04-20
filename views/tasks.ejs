@@ -1,0 +1,57 @@
+<!-- views/tasks.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager - Tasks</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/tasks">All Tasks</a></li>
+        <li><a href="/users/logout">Logout</a></li>
+    </ul>
+</nav>
+  <h1>Your Tasks</h1>
+
+  <!-- Create New Task Button -->
+  <a href="/tasks/create" class="create-task-button">Create New Task</a>
+
+  <div class="search-container">
+    <form action="/tasks/search" method="post">
+      <div>
+        <label for="keyword">Keyword:</label>
+        <input type="text" id="keyword" name="keyword">
+      </div>
+
+      <div>
+        <label for="dueDate">Due Date:</label>
+      <input type="date" id="dueDate" name="dueDate">
+      </div>
+
+      <button type="submit">Search</button>
+    </form>
+  </div>
+  <ul class="task-list">
+    <% tasks.forEach(task => { %>
+      <li>
+        <strong><%= task.title %></strong>
+        <p><%= task.description %></p>
+        <p>Deadline: <%= task.deadline %></p>
+        <p>Status: <%= task.status %></p>
+        <a href="/tasks/<%= task.task_id %>/update">Update</a>
+        <form action="/tasks/<%= task.task_id %>/delete" method="post">
+          <button type="submit">Delete</button>
+        </form>
+      </li>
+    <% }); %>
+  </ul>
+</body>
+
+</html>
