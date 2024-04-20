@@ -39,8 +39,8 @@ const Tasks = sequelize.define("tasks",{
     status: {
         type: DataTypes.STRING,
         defaultValue: 'Not Started'
-    }
-
+    },
+    
 })
 
 // Define association between User and Tasks models
@@ -50,7 +50,7 @@ User.hasMany(Tasks,{
 Tasks.belongsTo(User);
 
 // Sync the model with the database to create the 'Tasks' table
-sequelize.sync().then(() => {
+sequelize.sync({force:true}).then(() => {
     console.log('Task table created successfully!');
 }).catch((error) => {
     console.error('Unable to create table : ', error);

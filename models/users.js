@@ -42,7 +42,7 @@ const Users = sequelize.define("users",{
 });
 
 // Sync the model with the database to create the 'Users' table
-sequelize.sync().then(() => {
+sequelize.sync({force:true}).then(() => {
     console.log('Users table created successfully!');
 }).catch((error) => {
     console.error('Unable to create table : ', error);
