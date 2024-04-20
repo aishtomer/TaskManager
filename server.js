@@ -37,6 +37,9 @@ app.set('views', path.join(__dirname, 'views'));
 const userRoutes = require('./routes/user_routes');
 app.use('/users', userRoutes);
 
+const taskRoutes = require('./routes/task_routes');
+app.use('/', taskRoutes);
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
