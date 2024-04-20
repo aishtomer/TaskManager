@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Home</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/tasks">All Tasks</a></li>
+                <li><a href="/about">About</a></li>
+                <!-- Add more menu items as needed -->
+                <% if (!user) { %>
+                  <li><a href="/users/login">Login</a></li>
+                  <li><a href="/users/register">Register</a></li>
+                <% } else { %>
+                  <li><a href="/users/logout">Logout</a></li>
+                <% } %>
+            </ul>
+        </nav>
+
+        <h1>Welcome to Task Manager</h1>
+
+        <% if (user) { %>
+        <p>Hello, <%= user.username %>!</p>
+
+        <div class="weather-container">
+            <h2>Weather Information</h2>
+            <% if (weatherData) { %>
+                <p>Location: <%= weatherData.location.name %>, <%= weatherData.location.country %></p>
+                <p>Temperature: <%= weatherData.current.temp_c %>°C / <%= weatherData.current.temp_f %>°F</p>
+                <p>Condition: <%= weatherData.current.condition.text %></p>
+                <img src="https:<%= weatherData.current.condition.icon %>" alt="<%= weatherData.current.condition.text %>">
+            <% } else { %>
+                <p>Weather data not available</p>
+            <% } %>
+        </div>
+
+        <div class="tasks-container">
+          <h2>Tasks In Progress</h2>
+          <% if (inProgressTasks.length > 0) { %>
+            <ul>
+              <% inProgressTasks.forEach(task => { %>
+                <li>
+                  <strong><%= task.title %></strong>
+                  <p><%= task.description %></p>
+                  <p>Deadline: <%= task.deadline %></p>
+                  <p>Status: <%= task.status %></p>
+                </li>
+              <% }); %>
+            </ul>
+          <% } else { %>
+            <p>No tasks in progress</p>
+          <% } %>
+        </div>
+      <% } else { %>
+        <p>Please <a href="/users/login">login</a> or <a href="/users/register">register</a>.</p>
+      <% } %>
+
+    </body>
+</html>
