@@ -2,26 +2,73 @@ const Task = require('../models/tasks');
 const session = require('express-session');
 const { Sequelize, DataTypes } = require('sequelize');
 
-// Get all tasks for the logged-in user
+// Get all tasks for the logged-in user with sorting and filtering options
 exports.getTasks = async (req, res) => {
-  try {
-    const user = req.session.user;
-
-    if (!user) {
-      // Redirect to login if the user is not logged in
-      res.redirect('/users/login');
-      return;
+    try {
+      const user = req.session.user;
+  
+      if (!user) {
+        // Redirect to login if the user is not logged in
+        res.redirect('/users/login');
+        return;
+      }
+  
+      // Extract sorting and filtering options from query parameters
+      const { sortBy, sortOrder, status, category } = req.query;
+  
+      // Define options object for Sequelize query
+        const options = {
+            where: { user_id: user.user_id },
+            order: [] // Initialize the order array
+        };
+  
+      // Apply sorting based on user input
+      if (sortBy && sortOrder) {
+            options.order.push([sortBy, sortOrder.toUpperCase()]);
+      }
+  
+      // Apply filtering based on user input
+      if (status) {
+            options.where.status = status;
+      }
+  
+      if (category) {
+            options.where.category = category;
+      }
+  
+        // Fetch tasks for the logged-in user with sorting and filtering options
+        const tasks = await Task.findAll(options);
+  
+        // Render the tasks view with sorted and filtered tasks
+        res.render('tasks', { user, tasks });
+    } catch (error) {
+        console.error('Error retrieving tasks:', error);
+        res.status(500).send('Internal Server Error');
     }
-
-    // Fetch tasks for the logged-in user
-    const tasks = await Task.findAll({ where: { user_id: user.user_id } });
-
-    res.render('tasks', { user, tasks });
-  } catch (error) {
-    console.error('Error retrieving tasks:', error);
-    res.status(500).send('Internal Server Error');
-  }
 };
+  
+
+
+// // Get all tasks for the logged-in user
+// exports.getTasks = async (req, res) => {
+//   try {
+//     const user = req.session.user;
+
+//     if (!user) {
+//       // Redirect to login if the user is not logged in
+//       res.redirect('/users/login');
+//       return;
+//     }
+
+//     // Fetch tasks for the logged-in user
+//     const tasks = await Task.findAll({ where: { user_id: user.user_id } });
+
+//     res.render('tasks', { user, tasks });
+//   } catch (error) {
+//     console.error('Error retrieving tasks:', error);
+//     res.status(500).send('Internal Server Error');
+//   }
+// };
 
 // Render the form to create a new task
 exports.getCreateTask = async (req, res) => {
