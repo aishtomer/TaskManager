@@ -173,19 +173,19 @@ nav a {
     color: #333;
 }
   
-  .login-container input {
+.login-container input {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     transition: border-color 0.3s ease;
-  }
+}
   
-  .login-container input:focus {
+.login-container input:focus {
     border-color: #3498db;
-  }
+}
   
-  .login-container button {
+.login-container button {
     background-color: #3498db;
     color: #fff;
     padding: 10px;
@@ -193,94 +193,94 @@ nav a {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+}
   
-  .login-container button:hover {
+.login-container button:hover {
     background-color: #2980b9;
-  }
+}
   
-  .login-container p {
+.login-container p {
     text-align: center;
     margin-top: 15px;
     color: #333;
-  }
+}
   
-  .login-container a {
+.login-container a {
     color: #3498db;
     text-decoration: none;
     font-weight: bold;
-  }
+}
   
-  .login-container a:hover {
+.login-container a:hover {
     text-decoration: underline;
-  }
+}
 
 /* Style for Registration Form with Bluish Shades */
 .register-container {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #ecf2f9; /* Light blue background */
+    background-color: #ecf2f9; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .register-container h1 {
-    color: #3498db; /* Dark blue heading color */
+.register-container h1 {
+    color: #3498db; 
     text-align: center;
-  }
+}
   
-  .register-container form {
+.register-container form {
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .register-container label {
+.register-container label {
     margin-bottom: 8px;
     color: #333;
-  }
+}
   
-  .register-container input {
+.register-container input {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #b3c5d1; /* Lighter blue border */
+    border: 1px solid #b3c5d1; 
     border-radius: 5px;
     transition: border-color 0.3s ease;
-  }
+}
   
-  .register-container input:focus {
-    border-color: #3498db; /* Dark blue border on focus */
-  }
+.register-container input:focus {
+    border-color: #3498db; 
+}
   
-  .register-container button {
-    background-color: #3498db; /* Dark blue button background */
+.register-container button {
+    background-color: #3498db; 
     color: #fff;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+}
   
-  .register-container button:hover {
-    background-color: #2980b9; /* Slightly darker blue on hover */
-  }
+.register-container button:hover {
+    background-color: #2980b9; 
+}
   
-  .register-container p {
+.register-container p {
     text-align: center;
     margin-top: 15px;
     color: #333;
-  }
+}
   
-  .register-container a {
-    color: #3498db; /* Dark blue link color */
+.register-container a {
+    color: #3498db; 
     text-decoration: none;
     font-weight: bold;
-  }
+}
   
-  .register-container a:hover {
+.register-container a:hover {
     text-decoration: underline;
-  }
+}
 
 
 /* Style for Search Tasks Form */
@@ -289,40 +289,40 @@ nav a {
     align-items: center;
     margin: 20px auto;
     padding: 10px;
-    background-color: #ecf2f9; /* Light blue background */
+    background-color: #ecf2f9; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+}
   
 .search-container h2 {
-    margin-right: 20px; /* Adjust spacing between title and form */
-    color: #3498db; /* Dark blue heading color */
-  }
+    margin-right: 20px; 
+    color: #3498db; 
+}
   
-  .search-container form {
+.search-container form {
     display: flex;
     align-items: center;
     flex-grow: 1;
-  }
+}
   
-  .search-container label {
-    margin-right: 10px; /* Adjust spacing between labels and inputs */
+.search-container label {
+    margin-right: 10px; 
     color: #333;
-  }
+}
   
-  .search-container input {
+.search-container input {
     padding: 10px;
-    margin-right: 10px; /* Adjust spacing between inputs */
-    border: 1px solid #b3c5d1; /* Lighter blue border */
+    margin-right: 10px; 
+    border: 1px solid #b3c5d1; 
     border-radius: 5px;
     transition: border-color 0.3s ease;
-  }
+}
   
-  .search-container input:focus {
-    border-color: #3498db; /* Dark blue border on focus */
-  }
+.search-container input:focus {
+    border-color: #3498db; 
+}
   
-  .search-container button {
+.search-container button {
     background-color: #3498db; /* Dark blue button background */
     color: #fff;
     padding: 10px;
@@ -330,11 +330,11 @@ nav a {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+}
   
-  .search-container button:hover {
+.search-container button:hover {
     background-color: #2980b9; /* Slightly darker blue on hover */
-  }
+}
 
 /* Style for Task List */
 .task-list {
@@ -342,9 +342,9 @@ nav a {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-  }
+}
   
-  .task-list li {
+.task-list li {
     width: 100%;
     margin: 20px;
     padding: 20px;
@@ -352,113 +352,107 @@ nav a {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-  }
+}
   
-  
-  .task-list strong {
-    color: #3498db; /* Dark blue for task titles */
+.task-list strong {
+    color: #3498db; 
     font-size: 1.2em;
-  }
+}
   
-  .task-list p {
+.task-list p {
     color: #555;
     margin-bottom: 10px;
-  }
+}
   
-  .task-list a {
+.task-list a {
     display: inline-block;
     padding: 8px 12px;
-    background-color: #3498db; /* Dark blue button background */
+    background-color: #3498db; 
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-  }
+}
   
-  .task-list a:hover {
-    background-color: #2980b9; /* Slightly darker blue on hover */
-  }
+.task-list a:hover {
+    background-color: #2980b9; 
+}
   
-  .task-list form {
+.task-list form {
     display: inline;
     margin-left: 10px;
-  }
+}
   
-  .task-list button {
+.task-list button {
     padding: 8px 12px;
-    background-color: #e74c3c; /* Dark red button background for delete */
+    background-color: #e74c3c; 
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+}
   
-  .task-list button:hover {
-    background-color: #c0392b; /* Slightly darker red on hover */
-  }
+.task-list button:hover {
+    background-color: #c0392b; 
+}
   
-  
-/* /css/style.css */
-
-/* Existing styles... */
-
 /* Style for Create Task Form with Bluish Theme */
 .create-task-container {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #ecf2f9; /* Light blue background */
+    background-color: #ecf2f9; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+}
   
-  .create-task-container h2 {
-    color: #3498db; /* Dark blue heading color */
+.create-task-container h2 {
+    color: #3498db; 
     text-align: center;
-  }
+}
   
-  .create-task-container form {
+.create-task-container form {
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .create-task-container label {
+.create-task-container label {
     margin-bottom: 8px;
     color: #333;
-  }
+}
   
-  .create-task-container input,
-  .create-task-container textarea,
-  .create-task-container select {
+.create-task-container input,
+.create-task-container textarea,
+.create-task-container select {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #b3c5d1; /* Lighter blue border */
+    border: 1px solid #b3c5d1; 
     border-radius: 5px;
     transition: border-color 0.3s ease;
-    width: calc(100% - 22px); /* Adjust as needed */
-  }
+    width: calc(100% - 22px); 
+}
   
-  .create-task-container input:focus,
-  .create-task-container textarea:focus,
-  .create-task-container select:focus {
-    border-color: #3498db; /* Dark blue border on focus */
-  }
+.create-task-container input:focus,
+.create-task-container textarea:focus,
+.create-task-container select:focus {
+    border-color: #3498db; 
+}
   
-  .create-task-container button {
-    background-color: #3498db; /* Dark blue button background */
+.create-task-container button {
+    background-color: #3498db; 
     color: #fff;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: calc(100% - 22px); /* Adjust as needed */
-  }
+    width: calc(100% - 22px); 
+}
   
-  .create-task-container button:hover {
-    background-color: #2980b9; /* Slightly darker blue on hover */
-  }
+.create-task-container button:hover {
+    background-color: #2980b9; 
+}
 
 
 /* Style for Update Task Form with Bluish Theme */
@@ -466,117 +460,115 @@ nav a {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #ecf2f9; /* Light blue background */
+    background-color: #ecf2f9; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+}
   
-  .update-task-container h1 {
-    color: #3498db; /* Dark blue heading color */
+.update-task-container h1 {
+    color: #3498db; 
     text-align: center;
-  }
+}
   
-  .update-task-container form {
+.update-task-container form {
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .update-task-container label {
+.update-task-container label {
     margin-bottom: 8px;
     color: #333;
-  }
+}
   
-  .update-task-container input,
-  .update-task-container textarea,
-  .update-task-container select {
+.update-task-container input,
+.update-task-container textarea,
+.update-task-container select {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #b3c5d1; /* Lighter blue border */
+    border: 1px solid #b3c5d1; 
     border-radius: 5px;
     transition: border-color 0.3s ease;
-    width: calc(100% - 22px); /* Adjust as needed */
-  }
+    width: calc(100% - 22px); 
+}
   
-  .update-task-container input:focus,
-  .update-task-container textarea:focus,
-  .update-task-container select:focus {
-    border-color: #3498db; /* Dark blue border on focus */
-  }
+.update-task-container input:focus,
+.update-task-container textarea:focus,
+.update-task-container select:focus {
+    border-color: #3498db; 
+}
   
-  .update-task-container button {
-    background-color: #3498db; /* Dark blue button background */
+.update-task-container button {
+    background-color: #3498db; 
     color: #fff;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: calc(100% - 22px); /* Adjust as needed */
-  }
+    width: calc(100% - 22px); 
+}
   
-  .update-task-container button:hover {
-    background-color: #2980b9; /* Slightly darker blue on hover */
-  }
-  
- 
+.update-task-container button:hover {
+    background-color: #2980b9; 
+}
   
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
+}
   
-  nav {
+nav {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-  }
+}
   
-  nav ul {
+nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
+}
   
-  nav ul li {
+nav ul li {
     display: inline;
     margin-right: 10px;
-  }
+}
   
-  nav ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
-  }
+}
   
-  h1 {
+h1 {
     margin-top: 20px;
-  }
+}
   
-  .filter-container {
+.filter-container {
     margin-bottom: 20px;
-  }
+}
   
-  .filter-container form {
+.filter-container form {
     display: flex;
     flex-wrap: wrap;
-  }
+}
   
-  .filter-container div {
+.filter-container div {
     margin-right: 20px;
     margin-bottom: 10px;
-  }
+}
   
-  .filter-container label {
+.filter-container label {
     font-weight: bold;
-  }
+}
   
-  .filter-container select, .search-container input[type="date"], .search-container input[type="text"] {
+.filter-container select, .search-container input[type="date"], .search-container input[type="text"] {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 3px;
-  }
+}
   
-  .create-task-button {
+.create-task-button {
     display: block;
     width: 50%;
     text-align: center;
@@ -587,34 +579,34 @@ body {
     text-decoration: none;
     border: none;
     border-radius: 5px;
-  }
+}
   
-  .search-container {
+.search-container {
     margin-bottom: 20px;
-  }
+}
   
-  .search-container form {
+.search-container form {
     display: flex;
     flex-wrap: wrap;
-  }
+}
   
-  .search-container div {
+.search-container div {
     margin-right: 20px;
     margin-bottom: 10px;
-  }
+}
   
-  .search-container label {
+.search-container label {
     font-weight: bold;
-  }
+}
   
-  .search-container button {
+.search-container button {
     padding: 5px 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-  }
+}
   
 .task-list {
     list-style: none;
@@ -641,4 +633,3 @@ body {
     border-radius: 3px;
     cursor: pointer;
 }
-  
