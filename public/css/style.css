@@ -1,0 +1,658 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+  
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+  
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+  
+h1, h2 {
+    color: #333;
+}
+  
+a {
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+  
+/* Style for Weather Information */
+.weather-container {
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    border: 1px solid #2c3e50;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ecf0f1;
+}
+
+.weather-container h2 {
+    color: #ecf0f1;
+}
+
+.weather-container p {
+    color: #ecf0f1;
+    margin: 10px 0;
+}
+
+.weather-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for Tasks In Progress */
+.tasks-container {
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ecf0f1;
+    overflow: hidden;
+}
+  
+.tasks-container h2 {
+    color: #ecf0f1;
+}
+
+.tasks-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tasks-container li {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.tasks-container li strong {
+    color: #e74c3c;
+}
+
+.tasks-container li p {
+    color: #333;
+}
+
+/* Style for Navigation Menu */
+nav {
+    background: #305173;
+}
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px; /* Adjust the height as needed */
+}
+  
+nav li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for Login Form */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.login-container h1 {
+    color: #3498db;
+    text-align: center;
+}
+  
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.login-container label {
+    margin-bottom: 8px;
+    color: #333;
+}
+  
+  .login-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .login-container input:focus {
+    border-color: #3498db;
+  }
+  
+  .login-container button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-container button:hover {
+    background-color: #2980b9;
+  }
+  
+  .login-container p {
+    text-align: center;
+    margin-top: 15px;
+    color: #333;
+  }
+  
+  .login-container a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-container a:hover {
+    text-decoration: underline;
+  }
+
+/* Style for Registration Form with Bluish Shades */
+.register-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ecf2f9; /* Light blue background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-container h1 {
+    color: #3498db; /* Dark blue heading color */
+    text-align: center;
+  }
+  
+  .register-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-container label {
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .register-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #b3c5d1; /* Lighter blue border */
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .register-container input:focus {
+    border-color: #3498db; /* Dark blue border on focus */
+  }
+  
+  .register-container button {
+    background-color: #3498db; /* Dark blue button background */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-container button:hover {
+    background-color: #2980b9; /* Slightly darker blue on hover */
+  }
+  
+  .register-container p {
+    text-align: center;
+    margin-top: 15px;
+    color: #333;
+  }
+  
+  .register-container a {
+    color: #3498db; /* Dark blue link color */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .register-container a:hover {
+    text-decoration: underline;
+  }
+
+
+/* Style for Search Tasks Form */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ecf2f9; /* Light blue background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+.search-container h2 {
+    margin-right: 20px; /* Adjust spacing between title and form */
+    color: #3498db; /* Dark blue heading color */
+  }
+  
+  .search-container form {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .search-container label {
+    margin-right: 10px; /* Adjust spacing between labels and inputs */
+    color: #333;
+  }
+  
+  .search-container input {
+    padding: 10px;
+    margin-right: 10px; /* Adjust spacing between inputs */
+    border: 1px solid #b3c5d1; /* Lighter blue border */
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-container input:focus {
+    border-color: #3498db; /* Dark blue border on focus */
+  }
+  
+  .search-container button {
+    background-color: #3498db; /* Dark blue button background */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-container button:hover {
+    background-color: #2980b9; /* Slightly darker blue on hover */
+  }
+
+/* Style for Task List */
+.task-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .task-list li {
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  .task-list strong {
+    color: #3498db; /* Dark blue for task titles */
+    font-size: 1.2em;
+  }
+  
+  .task-list p {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .task-list a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #3498db; /* Dark blue button background */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-list a:hover {
+    background-color: #2980b9; /* Slightly darker blue on hover */
+  }
+  
+  .task-list form {
+    display: inline;
+    margin-left: 10px;
+  }
+  
+  .task-list button {
+    padding: 8px 12px;
+    background-color: #e74c3c; /* Dark red button background for delete */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-list button:hover {
+    background-color: #c0392b; /* Slightly darker red on hover */
+  }
+  
+  
+/* /css/style.css */
+
+/* Existing styles... */
+
+/* Style for Create Task Form with Bluish Theme */
+.create-task-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ecf2f9; /* Light blue background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create-task-container h2 {
+    color: #3498db; /* Dark blue heading color */
+    text-align: center;
+  }
+  
+  .create-task-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-task-container label {
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .create-task-container input,
+  .create-task-container textarea,
+  .create-task-container select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #b3c5d1; /* Lighter blue border */
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    width: calc(100% - 22px); /* Adjust as needed */
+  }
+  
+  .create-task-container input:focus,
+  .create-task-container textarea:focus,
+  .create-task-container select:focus {
+    border-color: #3498db; /* Dark blue border on focus */
+  }
+  
+  .create-task-container button {
+    background-color: #3498db; /* Dark blue button background */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: calc(100% - 22px); /* Adjust as needed */
+  }
+  
+  .create-task-container button:hover {
+    background-color: #2980b9; /* Slightly darker blue on hover */
+  }
+
+
+/* Style for Update Task Form with Bluish Theme */
+.update-task-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ecf2f9; /* Light blue background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .update-task-container h1 {
+    color: #3498db; /* Dark blue heading color */
+    text-align: center;
+  }
+  
+  .update-task-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .update-task-container label {
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .update-task-container input,
+  .update-task-container textarea,
+  .update-task-container select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #b3c5d1; /* Lighter blue border */
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    width: calc(100% - 22px); /* Adjust as needed */
+  }
+  
+  .update-task-container input:focus,
+  .update-task-container textarea:focus,
+  .update-task-container select:focus {
+    border-color: #3498db; /* Dark blue border on focus */
+  }
+  
+  .update-task-container button {
+    background-color: #3498db; /* Dark blue button background */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: calc(100% - 22px); /* Adjust as needed */
+  }
+  
+  .update-task-container button:hover {
+    background-color: #2980b9; /* Slightly darker blue on hover */
+  }
+  
+  /* Style for Create New Task Button */
+.create-task-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-task-button:hover {
+    background-color: #45a049;
+  }
+  
+
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  h1 {
+    margin-top: 20px;
+  }
+  
+  .filter-container {
+    margin-bottom: 20px;
+  }
+  
+  .filter-container form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .filter-container div {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .filter-container label {
+    font-weight: bold;
+  }
+  
+  .filter-container select, .search-container input[type="date"], .search-container input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .create-task-button {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-container form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .search-container div {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .search-container label {
+    font-weight: bold;
+  }
+  
+  .search-container button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-list li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .task-list li a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .task-list li button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
