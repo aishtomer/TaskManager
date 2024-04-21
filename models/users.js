@@ -1,20 +1,9 @@
 const { Sequelize, DataTypes } = require("sequelize");
 
 // Define Sequelize instance with database connection details
-// const sequelize = new Sequelize(
-//     'taskmanager7860',      // Database name
-//     'aishtomer',            // Database username
-//     'Ast@8874635984',       // Database password
-//     {
-//         host: 'db4free.net',// Database host
-//         dialect: 'mysql'    // Database dialect
-//     }
-// );
-
-// Define Sequelize instance with database connection details
 const sequelize = new Sequelize(
-    'sql8700522',      // Database name
-    'sql8700522',            // Database username
+    'sql8700522',       // Database name
+    'sql8700522',       // Database username
     'ZL8DvjS3VH',       // Database password
     {
         host: 'sql8.freemysqlhosting.net',// Database host
