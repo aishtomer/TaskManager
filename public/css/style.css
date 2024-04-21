@@ -616,29 +616,29 @@ body {
     cursor: pointer;
   }
   
-  .task-list {
+.task-list {
     list-style: none;
     padding: 0;
-  }
+}
   
-  .task-list li {
+.task-list li {
     margin-bottom: 20px;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
-  }
+}
   
-  .task-list li a {
-    color: #007bff;
+.task-list li a {
+    color: #ffffff;
     text-decoration: none;
     margin-right: 10px;
-  }
+}
   
-  .task-list li button {
+.task-list li button {
     background-color: #dc3545;
     color: #fff;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-  }
+}
   

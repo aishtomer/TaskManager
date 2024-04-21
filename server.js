@@ -3,15 +3,7 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const path = require('path');
 const Sequelize = require("sequelize");
-// const sequelize = new Sequelize(
-//     'taskmanager7860',
-//     'aishtomer',
-//     'Ast@8874635984',
-//     {
-//         host: 'db4free.net',
-//         dialect: 'mysql'
-//     }
-// );
+
 
 // Define Sequelize instance with database connection details
 const sequelize = new Sequelize(
