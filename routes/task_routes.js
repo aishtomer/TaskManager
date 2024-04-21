@@ -5,12 +5,12 @@ const homeController = require('../controllers/home_controller');
 
 // Middleware to check if the user is logged in
 const isAuthenticated = (req, res, next) => {
-  if (req.session.user) {
-    return next();
-  } else {
-    // Redirect to login if the user is not logged in
-    res.redirect('/users/login');
-  }
+    if (req.session.user) {
+        return next();
+    } else {
+        // Redirect to login if the user is not logged in
+        res.redirect('/users/login');
+    }
 };
 
 // Routes for tasks
