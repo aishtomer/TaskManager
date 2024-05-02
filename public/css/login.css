@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF3E0; /* light warm background */
+    color: #5D4037; /* warm brown text color */
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #FFAB91; /* soft red */
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+
+/* Login Container Styles */
+.login-container {
+    background-color: #FFE0B2; /* light warm shade */
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    text-align: center;
+    color: #BF360C; /* darker shade of red */
+    margin-bottom: 20px;
+}
+
+.login-container form {
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input[type="username"],
+.login-container input[type="password"] {
+    width: 93%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    margin-bottom: 10px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FF7043; /* warm orange */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #E64A19; /* dark orange on hover */
+}
+
+.login-container p {
+    text-align: center;
+}
+
+.login-container p a {
+    color: #1976D2; /* Blue color for links */
+    text-decoration: none;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}

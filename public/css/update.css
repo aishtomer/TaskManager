@@ -1,0 +1,100 @@
+/* Basic Reset and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #FFF3E0; /* light warm background */
+    color: #5D4037; /* warm brown text color */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header and Navigation Styles */
+nav {
+    background-color: #FFAB91; /* soft red */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD54F; /* hover color */
+}
+
+/* Update Task Container Styles */
+.update-task-container {
+    background-color: #FFE0B2; /* light warm shade */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.update-task-container h1 {
+    text-align: center;
+    color: #BF360C; /* darker shade of red */
+    margin-bottom: 20px;
+}
+
+.update-task-container form {
+    margin-bottom: 20px;
+}
+
+.update-task-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.update-task-container input[type="text"],
+.update-task-container textarea,
+.update-task-container input[type="date"]{
+    width: 96%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    margin-bottom: 10px;
+}
+
+.update-task-container select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    margin-bottom: 10px;
+}
+
+.update-task-container button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FF7043; /* warm orange */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.update-task-container button:hover {
+    background-color: #E64A19; /* dark orange on hover */
+}

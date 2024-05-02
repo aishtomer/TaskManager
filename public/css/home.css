@@ -1,0 +1,120 @@
+/* Basic Reset and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #FFF3E0; /* light warm background */
+    color: #5D4037; /* warm brown text color */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header and Navigation Styles */
+nav {
+    background-color: #FFAB91; /* soft red */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD54F; /* hover color */
+}
+
+/* Main Content Headers */
+h1, h2 {
+    color: #BF360C; /* darker shade of red */
+    margin-bottom: 0.5em;
+}
+
+/* Weather and Task Containers */
+.weather-container, .tasks-container {
+    margin-top: 20px;
+    background-color: #FFE0B2; /* lighter warm shade */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-container img {
+    width: 80px; /* adjust image size */
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Task List Styles */
+.tasks-container ul {
+    list-style-type: none;
+}
+
+.tasks-container li {
+    background: #FFCCBC; /* lighter red */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tasks-container li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.tasks-container strong {
+    color: #E64A19; /* dark orange for emphasis */
+}
+
+/* Link Styles */
+a {
+    color: #FF7043; /* warm link color */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #FBC02D;
+    text-decoration: none;
+}
+
+/* Flexbox layout for the content */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+}
+
+.home-image {
+    width: 40%; /* Adjust as necessary */
+    height: auto;
+    flex-shrink: 0;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Takes remaining space */
+}

@@ -1,0 +1,238 @@
+/* Basic Reset and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #FFF3E0; /* light warm background */
+    color: #5D4037; /* warm brown text color */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header and Navigation Styles */
+nav {
+    background-color: #FFAB91; /* soft red */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD54F; /* hover color */
+}
+
+
+/* Main Content Header */
+h1 {
+    color: #BF360C; /* darker shade of red */
+    margin-bottom: 20px;
+}
+
+/* Filter Container Styles */
+.filter-container {
+    background-color: #FFE0B2; /* lighter warm shade */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.filter-container form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-container div {
+    margin-right: 20px;
+}
+
+.filter-container label {
+    margin-right: 10px;
+    color: #5D4037; /* warm brown */
+}
+
+.filter-container select,
+.filter-container input[type="date"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    background-color: white;
+}
+
+.filter-container button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #FF7043; /* warm orange */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-container button:hover {
+    background-color: #E64A19; /* dark orange on hover */
+}
+
+/* Create Task Button Styles */
+.create-task-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #FF7043; /* warm orange */
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.create-task-button:hover {
+    background-color: #E64A19; /* dark orange on hover */
+}
+
+/* Task List Styles */
+.task-list {
+    list-style-type: none;
+}
+
+.task-list li {
+    background-color: #FFCCBC; /* lighter red */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.task-list li strong {
+    color: #E64A19; /* dark orange for emphasis */
+}
+
+.task-list li a {
+    color: #FF7043; /* warm orange for links */
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.task-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Search Container Styles */
+
+.search-container {
+    background-color: #FFE0B2; /* lighter warm shade */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.search-container form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-container div {
+    margin-right: 20px;
+}
+
+.search-container label {
+    margin-right: 10px;
+    color: #5D4037; /* warm brown */
+}
+
+.search-container select,
+.search-container input[type="date"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    background-color: white;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #FF7043; /* warm orange */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #E64A19; /* dark orange on hover */
+}
+
+/* Task List Styles */
+.task-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.task-list li {
+    background-color: #FFF8E1; /* light yellow */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex; /* Align items in a row */
+    align-items: center; /* Center vertically */
+}
+
+.task-list li strong {
+    color: #D84315; /* dark red for emphasis */
+    margin-right: 10px;
+    flex: 1; /* Allow the title to grow and take up remaining space */
+}
+
+.task-list li p {
+    margin: 0;
+    flex: 2; /* Let description and other details take up space */
+}
+
+/* Styling for Update link */
+.task-list li a {
+    color: #1976D2; /* Blue color for links */
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.task-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for Delete button */
+.task-list li form {
+    display: inline; /* Display the form inline */
+}
+
+.task-list li form button {
+    background-color: #D32F2F; /* Red color for buttons */
+    color: #FFF; /* White text color */
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-list li form button:hover {
+    background-color: #B71C1C; /* Darker red on hover */
+    color: #FFF;
+}
